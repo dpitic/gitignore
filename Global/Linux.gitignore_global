@@ -242,3 +242,8 @@ tags
 pyvenv.cfg
 .venv
 pip-selfcheck.json
+
+#
+# GDB
+#
+.gdb_history
