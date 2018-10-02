@@ -120,7 +120,7 @@ cmake-build-*/
 *.iws
 
 # IntelliJ
-/out/
+out/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
@@ -158,19 +158,19 @@ nbactions.xml
 # Sublime Text global .gitignore
 #
 
-# cache files for sublime text
+# Cache files for sublime text
 *.tmlanguage.cache
 *.tmPreferences.cache
 *.stTheme.cache
 
-# workspace files are user-specific
+# Workspace files are user-specific
 *.sublime-workspace
 
-# project files should be checked into the repository, unless a significant
+# Project files should be checked into the repository, unless a significant
 # proportion of contributors will probably not be using SublimeText
 # *.sublime-project
 
-# sftp configuration file
+# SFTP configuration file
 sftp-config.json
 
 # Package control specific files
@@ -247,14 +247,21 @@ flycheck_*.el
 [._]*.s[a-v][a-z]
 [._]*.sw[a-p]
 [._]s[a-v][a-z]
+[._]ss[a-gi-z]
 [._]sw[a-p]
-# session
+
+# Session
 Session.vim
-# temporary
+
+# Temporary
 .netrwhist
 *~
-# auto-generated tag files
+
+# Auto-generated tag files
 tags
+
+# Persistent undo
+[._]*.un~
 
 #
 # Virtualenv
@@ -262,9 +269,12 @@ tags
 #
 .Python
 [Bb]in
+#-------------------------------------------------------------------------------
+# These interfere with C/C++ development, therefore exclude
 #[Ii]nclude
 #[Ll]ib
 #[Ll]ib64
+#-------------------------------------------------------------------------------
 [Ll]ocal
 [Ss]cripts
 pyvenv.cfg
